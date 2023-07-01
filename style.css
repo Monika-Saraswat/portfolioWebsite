@@ -272,11 +272,11 @@ h3.my-profession{
 }
 
 /* about section start */
-.about .about-content{
+.about .about-content,.skills .skills-content{
     flex:0 0 100%;
     max-width: 100%;
 }
-.about .about-img{
+.about .about-img,.skills .skillImage{
     flex: 0 0 40%;
     max-width: 40%;
     text-align: center;
@@ -307,7 +307,7 @@ h3.my-profession{
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
 }
-.about .about-content .about-text{
+.about .about-content .about-text,.skills .skills-content .skill-text{
     flex:0 0 60%;
     max-width: 60%;
 }
@@ -432,6 +432,10 @@ h3.my-profession{
     font-weight: 400;
     line-height: 40px;
 }
+.skillImage img{
+    height: 500px;
+}
+
 /* hobbies section */
 .hobbies .container{
     padding-bottom: 40px;
@@ -584,6 +588,25 @@ h3.my-profession{
         flex: 0 0 100%;
         max-width: 100%;
     }
+}
+@media(max-height:470px){
+    .aside{
+        left: -270px;
+    }
+    .main-content{
+        padding-left: 0;
+    }
+}
+@media(max-width:867px){
+    .skills .skill-text{
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 50px;
+    }
+    .skills .skillImage img{
+        height: 200px;
+    }
+
 }
 /* dark light theme */
 .s-icon
